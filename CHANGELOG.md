@@ -7,10 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## unreleased
 
 ### Added
+
 - Add `MessageToCopyNotFound` error to `teloxide::errors::ApiError` ([PR 917](https://github.com/teloxide/teloxide/pull/917)) 
+- `Dispatcher::try_dispatch_with_listener` ([PR 913](https://github.com/teloxide/teloxide/pull/913))
+
 ### Fixed
+
 - Use `UserId` instead of `i64` for `user_id` in `html::user_mention` and `markdown::user_mention` ([PR 896](https://github.com/teloxide/teloxide/pull/896))
 - Greatly improved the speed of graceful shutdown (`^C`) ([PR 938](https://github.com/teloxide/teloxide/pull/938))
+- Fix typos in docstrings ([PR 953](https://github.com/teloxide/teloxide/pull/953))
+
+### Changed
+
+- MSRV (Minimal Supported Rust Version) was bumped from `1.64.0` to `1.68.0` ([PR 950][https://github.com/teloxide/teloxide/pull/950])
 
 ### Removed
 
